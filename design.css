@@ -1,0 +1,162 @@
+ 
+    :root {
+      --black: #000;
+      --gold: #d4af37;
+      --light-black: #111;
+      --white: #fff;
+      --radius: 12px;
+    }
+
+    
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #000;
+  background-image: url('LPN.png'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px auto; 
+  background-attachment: fixed;
+  color: white;
+
+
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    header {
+      background-color: var(--light-black);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: var(--gold);
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+
+    nav a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    p  {
+      line-height: 1.7;
+    }
+
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .player-card {
+      background-color: #1a1a1a;
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      border: 1px solid var(--gold);
+    }
+
+    .player-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid var(--gold);
+    }
+
+    .schedule, .contact {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--gold);
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: var(--black);
+      border: 1px solid var(--gold);
+      color: white;
+      border-radius: var(--radius);
+    }
+
+    .contact button {
+      margin-top: 15px;
+      background-color: var(--gold);
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: var(--radius);
+      cursor: pointer;
+    }
+
+    #slogan{
+      color: #d4af37;
+      font-style: italic;
+      word-spacing: 30px;
+    }
+    .date {
+        margin-top:  0px; ;
+
+    }
+
+     .foot  {
+        margin-bottom:  0px; ;
+
+    }
+
+    footer {
+      background-color: #111;
+      color: var(--gold);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+    }
+  
